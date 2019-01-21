@@ -1,0 +1,148 @@
+ul li, #newColor {
+  border: 0;
+  border-radius: 60px;
+  box-shadow: 0 3px 0 0 #222222;
+  cursor: pointer;
+  display: block;
+  height: 54px;
+  width: 54px;
+}
+
+body {
+  background: #384047;
+  font-family: sans-serif;
+}
+
+canvas {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 0 0 #222222;
+  cursor: url("../img/cursor.png"), crosshair;
+  display: block;
+  margin: 50px auto 10px;
+}
+
+.controls {
+  border-radius: 5px;
+  margin: 0 auto;
+  min-height: 60px;
+  overflow: hidden;
+  width: 600px;
+}
+
+ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 5px 10px;
+}
+
+#newColor {
+  border: 0;
+  border-radius: 3px;
+  box-shadow: none;
+  float: left;
+  height: 80px;
+  margin: 10px 20px 20px 10px;
+  width: 80px;
+}
+
+.red {
+  background: #fc4c4f;
+}
+
+.blue {
+  background: #4fa3fc;
+}
+
+.yellow {
+  background: #ecd13f;
+}
+
+.selected {
+  border: 7px solid #ffffff;
+  height: 40px;
+  width: 40px;
+}
+
+button {
+  background: #68b25b;
+  box-shadow: 0 3px 0 0 #6a845f;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 40px;
+  outline: none;
+  text-shadow: 0 1px #6a845f;
+}
+
+#revealColorSelect {
+  border: 0;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 5px 20px;
+  width: 160px;
+}
+
+#colorSelect {
+  background: #ffffff;
+  border-radius: 5px;
+  clear: both;
+  display: none;
+  margin: 20px auto 0;
+  padding: 10px;
+  position: relative;
+  width: 305px;
+}
+
+#colorSelect::after {
+  border: solid transparent;
+  border-bottom-color: #ffffff;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 10px;
+  bottom: 100%;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -10px;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+}
+
+#colorSelect button {
+  border: 0;
+  border-radius: 0 0 5px 5px;
+  border-top: 1px solid #6a845f;
+  clear: both;
+  margin: 10px -10px -7px;
+  padding: 5px 10px;
+  width: 325px;
+}
+
+.sliders p {
+  margin: 8px 0;
+  vertical-align: middle;
+}
+
+.sliders label {
+  color: #6d574e;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px 0 0;
+  width: 35px;
+}
+
+.sliders input {
+  position: relative;
+  top: 2px;
+}
